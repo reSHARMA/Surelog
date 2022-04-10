@@ -167,7 +167,7 @@ bool ErrorDefinition::init() {
   rec(CMD_DEBUG_MISSING_LEVEL, ERROR, CMD,
       "Option -d is missing the debug level <level>");
   rec(CMD_DEBUG_INCORRECT_LEVEL, WARNING, CMD,
-      "Option -d received incorrect level: \"%s\", level should be 0-3");
+      "Option -d received incorrect level: \"%s\", level should be 1-4");
   rec(CMD_LIBRARY_FILE_MISSING_FILE, ERROR, CMD,
       "Library File option \"%s\" is missing the file name");
   rec(CMD_LIBRARY_PATH_MISSING_PATH, ERROR, CMD,
