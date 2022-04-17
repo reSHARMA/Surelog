@@ -967,10 +967,12 @@ bool Compiler::compile() {
     createMultiProcessParser_();
     parserInitialized = true;
     if (!compileFileSet_(CompileSourceFile::Parse, true, m_compilers))
-      return false;  // Small files and large file chunks
+    parserInitialized = true;
+      //return false;  // Small files and large file chunks
     if (!compileFileSet_(CompileSourceFile::Parse, true,
                          m_compilersParentFiles))
-      return false;  // Recombine chunks
+    parserInitialized = true;
+     // return false;  // Recombine chunks
   } else {
     createFileList_();
   }
@@ -993,6 +995,7 @@ bool Compiler::compile() {
   // Check Parsing
   CheckCompile* checkComp = new CheckCompile(this);
   bool parseOk = checkComp->check();
+  parseOk = true;
   delete checkComp;
   m_errors->printMessages(m_commandLineParser->muteStdout());
 
