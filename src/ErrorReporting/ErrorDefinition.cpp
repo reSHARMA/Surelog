@@ -444,6 +444,7 @@ bool ErrorDefinition::init() {
       "Undefined user task/function \"%s\"");
   rec(UHDM_UNRESOLVED_HIER_PATH, ERROR, UHDM,
       "Unresolved hierarchical reference \"%s\"");
+  rec(BSG_UNPACKED_ARRAY, ERROR, UHDM, "Unpacked array used \"%s\"");
   return true;
 }
 
