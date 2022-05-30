@@ -448,6 +448,7 @@ bool ErrorDefinition::init() {
   rec(BSG_MULTIPLE_ALWAYS, ERROR, UHDM, "Multiple always used \"%s\"");
   rec(BSG_LOCAL_PARAM, ERROR, UHDM, "Local param used \"%s\"");
   rec(BSG_INTERFACE, ERROR, UHDM, "Interface used \"%s\"");
+  rec(BSG_SIGNED, ERROR, UHDM, "$signed used \"%s\"");
   return true;
 }
 
