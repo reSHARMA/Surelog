@@ -445,6 +445,7 @@ bool ErrorDefinition::init() {
   rec(UHDM_UNRESOLVED_HIER_PATH, ERROR, UHDM,
       "Unresolved hierarchical reference \"%s\"");
   rec(BSG_UNPACKED_ARRAY, ERROR, UHDM, "Unpacked array used \"%s\"");
+  rec(BSG_MULTIPLE_ALWAYS, ERROR, UHDM, "Multiple always used \"%s\"");
   return true;
 }
 
