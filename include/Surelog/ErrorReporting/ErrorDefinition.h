@@ -238,7 +238,8 @@ class ErrorDefinition {
     UHDM_UNRESOLVED_HIER_PATH = 725,
     BSG_UNPACKED_ARRAY = 726,
     BSG_MULTIPLE_ALWAYS = 727,
-    BSG_LOCAL_PARAM = 728
+    BSG_LOCAL_PARAM = 728,
+    BSG_INTERFACE = 729
   };
 
   class ErrorInfo {
